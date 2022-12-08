@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
 *,
 *:after,
-*::before{
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,40 +10,48 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
 }
-html , body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-body{
+
+body {
     background-color: #1a1a1a;
     padding: 20px;
     background-image: url(./images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    
+
 }
+
 /* header style  */
-header{
+header {
     display: flex;
     align-items: center;
     /* margin: 20px 0 0 20px; */
 }
-header img{
+
+header img {
     width: 9rem;
 }
-header p{
+
+header p {
     color: white;
     font-weight: 700;
     font-size: 5rem;
 }
+
 header span {
     color: #daa439;
     font-weight: 700;
     font-size: 6rem;
 }
+
 /* main style  */
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,11 +61,13 @@ main{
     flex-grow: 1;
     /* border: 1px solid white; */
 }
+
 main .main-divs-width {
     width: 30rem;
     margin-top: 3%;
 }
-main .clockContainer{
+
+main .clockContainer {
     display: flex;
     position: relative;
     justify-content: center;
@@ -64,47 +75,55 @@ main .clockContainer{
     height: 30rem;
     border: 2px solid #ffffff;
     border-radius: 100%;
-    
+
 }
+
 /* the bars of clock  */
 /* hour */
-main .clockContainer .hour{
+main .clockContainer .hour {
     position: relative;
     display: flex;
     height: 30%;
     width: 7px;
-    transition: .07s;
-    transform: rotate(0deg) translate(0px,-30%);
+    transition: all 0.09s;
+    transition-timing-function: cubic-bezier(0, 1.79, .22, .4);
+    transform: rotate(0deg) translate(0px, -30%);
     background-color: #ffffff;
     border-radius: 50px;
-    
+
 }
+
 /* min  */
-main .clockContainer .minute{
+main .clockContainer .minute {
     position: relative;
     display: flex;
     height: 40%;
     width: 5px;
-    transition: .07s;
-    transform: rotate(0deg) translate(0px,-30%);
+    transition: all 0.09s;
+    transition-timing-function: cubic-bezier(0, 1.79, .22, .4);
+    transform: rotate(0deg) translate(0px, -30%);
     background-color: #ffffff;
     border-radius: 50px;
-    
+
 }
+
 /* second  */
-main .clockContainer .second{
+main .clockContainer .second {
     position: relative;
     display: flex;
     height: 50%;
     width: 3px;
-    transform: rotate(0deg) translate(0px,-30%);
+    transition: all 0.09s;
+    transition-timing-function: cubic-bezier(0, 1.79, .22, .4);
+    transform: rotate(0deg) translate(0px, -30%);
     background-color: #ffffff;
     border-radius: 50px;
-    
-    
+
+
 }
+
 /* circle on the center of clock  */
-main .clockContainer .center-point{
+main .clockContainer .center-point {
     position: absolute;
     display: flex;
     width: 15px;
@@ -112,67 +131,82 @@ main .clockContainer .center-point{
     border-radius: 100%;
     border: #1a1a1a 1px solid;
 }
+
 /* clocktime syle  */
-main .clockContainer .clock-time{
+main .clockContainer .clock-time {
     position: absolute;
     color: white;
     font-size: 3rem;
     margin: 5px;
 }
-main .clockContainer .t12{
-    top:0px;
+
+main .clockContainer .t12 {
+    top: 0px;
 }
-main .clockContainer .t3{
-    right:0px;
+
+main .clockContainer .t3 {
+    right: 0px;
 }
-main .clockContainer .t6{
-    bottom:0px;
+
+main .clockContainer .t6 {
+    bottom: 0px;
 }
-main .clockContainer .t9{
-    left:0px;
+
+main .clockContainer .t9 {
+    left: 0px;
 }
 
 /* container time style  */
-main .timeContainer{
-    
+main .timeContainer {
+
     display: flex;
     justify-content: center;
     margin-top: 5rem;
-    color :white;
+    color: white;
     border: 2px solid white;
 }
-main .timeContainer span{
+
+main .timeContainer span {
     font-size: 3rem;
     font-weight: 700;
 }
-main .timeContainer p{
+
+main .timeContainer p {
     font-size: 3rem;
     font-weight: 700;
 }
-@media (max-width:992px){
-    header img{
+
+@media (max-width:992px) {
+    header img {
         width: 6rem;
     }
-    header p{
+
+    header p {
         font-size: 3rem;
     }
+
     header span {
         font-size: 3rem;
     }
+
     main .main-divs-width {
         width: 22rem;
     }
-    main .clockContainer{
-        
+
+    main .clockContainer {
+
         height: 22rem;
     }
-    main .timeContainer{
+
+    main .timeContainer {
         margin-top: 3rem;
     }
-    main .timeContainer span{
+
+    main .timeContainer span {
         font-size: 2rem;
     }
-    main .timeContainer p{
+
+    main .timeContainer p {
         font-size: 2rem;
     }
 }
