@@ -204,3 +204,16 @@ main .timeContainer p {
         font-size: 2rem;
     }
 }
+@media (max-width:604px) {
+    header img {
+        width: 4rem;
+    }
+
+    header p {
+        font-size: 1.6rem;
+    }
+
+    header span {
+        font-size: 1.6rem;
+    }
+}
