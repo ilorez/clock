@@ -78,7 +78,7 @@ main .clockContainer {
 /* the bars of clock  */
 /* hour */
 main .clockContainer .hour {
-    position: relative;
+    position: absolute;
     display: flex;
     height: 30%;
     width: 7px;
@@ -90,7 +90,7 @@ main .clockContainer .hour {
 
 /* min  */
 main .clockContainer .minute {
-    position: relative;
+    position: absolute;
     display: flex;
     height: 40%;
     width: 5px;
@@ -102,7 +102,7 @@ main .clockContainer .minute {
 
 /* second  */
 main .clockContainer .second {
-    position: relative;
+    position: absolute;
     display: flex;
     height: 50%;
     width: 3px;
@@ -119,9 +119,10 @@ main .clockContainer .second {
 main .clockContainer .center-point {
     position: absolute;
     display: flex;
-    width: 15px;
-    height: 15px;
+    width: 7px;
+    height: 7px;
     border-radius: 100%;
+    background-color: #bdbdbd;
     border: #1a1a1a 1px solid;
 }
 
@@ -130,7 +131,7 @@ main .clockContainer .clock-time {
     position: absolute;
     color: white;
     font-size: 3rem;
-    margin: 5px;
+    margin: 0px 5px;
 }
 
 main .clockContainer .t12 {
@@ -138,7 +139,7 @@ main .clockContainer .t12 {
 }
 
 main .clockContainer .t3 {
-    right: 0px;
+    right: 3px;
 }
 
 main .clockContainer .t6 {
