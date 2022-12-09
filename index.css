@@ -31,7 +31,6 @@ body {
 header {
     display: flex;
     align-items: center;
-    /* margin: 20px 0 0 20px; */
 }
 
 header img {
@@ -57,9 +56,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: calc(100% - 9rem) ; */
     flex-grow: 1;
-    /* border: 1px solid white; */
 }
 
 main .main-divs-width {
@@ -85,8 +82,6 @@ main .clockContainer .hour {
     display: flex;
     height: 30%;
     width: 7px;
-    transition: all 0.09s;
-    transition-timing-function: cubic-bezier(0, 1.79, .22, .4);
     transform: rotate(0deg) translate(0px, -30%);
     background-color: #ffffff;
     border-radius: 50px;
@@ -99,8 +94,6 @@ main .clockContainer .minute {
     display: flex;
     height: 40%;
     width: 5px;
-    transition: all 0.09s;
-    transition-timing-function: cubic-bezier(0, 1.79, .22, .4);
     transform: rotate(0deg) translate(0px, -30%);
     background-color: #ffffff;
     border-radius: 50px;
