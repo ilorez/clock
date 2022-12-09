@@ -2,7 +2,7 @@
 ## Info
 - This Website coded by [Z-Najdaoui](https://github.com/Z-Najdaoui)
 - 2022/12/08
-- last Edit 2022/12/08
+- last Edit 2022/12/09
 - chalenge from [WesBos](https://courses.wesbos.com/account/access/63906d2f40307fbbdeec4148/view/194130650), JavaScript30
 ## Summary
 - All focus in website on js
